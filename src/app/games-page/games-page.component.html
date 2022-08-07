@@ -1,7 +1,7 @@
 <div class="game-page-background">
     <ul class="nav nav-tabs ba nav-tab">
         <li  *ngFor="let category of gemesService.categories">
-            <a  [class.selected-tab]="selectedCategory == category"  (click)="changeCategory(category)" data-toggle="tab" [href]="'#'+category">{{category}}</a>
+            <a    (click)="changeCategory(category)" data-toggle="tab" [href]="'#'+category">{{category}}</a>
         </li>
 
     </ul>
