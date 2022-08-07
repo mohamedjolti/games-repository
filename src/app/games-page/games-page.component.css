@@ -1,0 +1,17 @@
+.game-image {
+    width: 100%;
+}
+.nav-tab .active a{
+    background-color: #8DC63F;
+    color: #ffffff;
+}
+.nav-tab{
+    background-color: #373737;
+}
+.game-page-background{
+    background-color: #FCFCFC;
+}
+a[data-toggle="tab"]{
+    color: #ffffff;
+
+}

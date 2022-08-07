@@ -1,0 +1,23 @@
+<div class="game-page-background">
+    <ul class="nav nav-tabs ba nav-tab">
+        <li  *ngFor="let category of gemesService.categories">
+            <a  [class.selected-tab]="selectedCategory == category"  (click)="changeCategory(category)" data-toggle="tab" [href]="'#'+category">{{category}}</a>
+        </li>
+
+    </ul>
+    <div class="container">
+        <div class="row">
+            <div class="tab-content">
+                <div class="tab-pane fade" [id]="selectedCategory">
+                    <div class="col-lg-3"  *ngFor="let game of gemesService.games">
+                        <div class="thumbnail " *ngIf="game.categories.includes(selectedCategory)">
+                            <img class="game-image" [src]="game.image" [alt]="game.name">
+                        </div>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+    </div>
+
+</div>
